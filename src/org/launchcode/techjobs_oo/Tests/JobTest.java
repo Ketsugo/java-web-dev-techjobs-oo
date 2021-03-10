@@ -55,7 +55,7 @@ public class JobTest {
 
     @Test
     public void testJobtoStringMethod(){
-        System.out.println(testJob3.toString());
+        // System.out.println(testJob3.toString());
         assertTrue("toString method outputs all the job fields correctly.", testJob3.toString().equals("\nID: 3\nName: Product tester\nEmployer: ACME\nLocation: Desert\nPosition Type: Quality control\nCore Competency: Persistence\n"));
     }
 }
