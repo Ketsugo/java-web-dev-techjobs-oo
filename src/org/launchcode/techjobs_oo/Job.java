@@ -57,6 +57,31 @@ public class Job {
     @Override
     public String toString() {
 
+
+        //
+        // Making sure blank fields are given something human-understandable.
+        //
+
+        if(this.name.equals("")){
+            this.name = "Not Applicable";
+        }
+
+        if(this.employer.toString().equals("")){
+            this.employer.setValue("Not Applicable");
+        }
+
+        if(this.location.toString().equals("")){
+            this.location.setValue("Not Applicable");
+        }
+
+        if(this.positionType.toString().equals("")){
+            this.positionType.setValue("Not Applicable");
+        }
+
+        if(this.coreCompetency.toString().equals("")){
+            this.coreCompetency.setValue("Not Applicable");
+        }
+
         return "\nID: " + this.id + "\nName: " + this.name + "\nEmployer: " + this.employer.getValue() + "\nLocation: " + this.location.getValue() + "\nPosition Type: " + this.positionType.getValue() + "\nCore Competency: " + this.coreCompetency.getValue() + "\n";
     }
 
